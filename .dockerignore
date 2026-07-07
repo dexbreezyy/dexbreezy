@@ -1,7 +1,0 @@
-.git
-.azure
-.gitignore
-README*
-Dockerfile*
-*.log
-node_modules
