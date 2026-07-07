@@ -1,0 +1,6 @@
+.git
+.azure
+.gitignore
+README*
+Dockerfile*
+*.log

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dexbreezy builds responsive, modern interfaces with minimal code and clean design elements.">
+  <meta property="og:title" content="Dexbreezy">
+  <meta property="og:description" content="Dexbreezy builds responsive, modern interfaces with minimal code and clean design elements.">
+  <meta property="og:url" content="https://dexbreezy.com">
+  <link rel="canonical" href="https://dexbreezy.com">
+  <title>Dexbreezy </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="hero-card">
+      <p class="eyebrow">Launching soon</p>
+      <h1>Dexbreezy is ready for the web.</h1>
+      <p class="lead">We design and build responsive websites that feel modern, fast, and clear for real audiences.</p>
+      <div class="actions">
+        <a class="button primary" href="https://dexbreezy.com">Visit dexbreezy.com</a>
+        <a class="button secondary" href="mailto:hello@dexbreezy.com">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const footerElement = document.getElementById("site-footer");
+
+      if (!footerElement) {
+        return;
+      }
+
+      footerElement.innerHTML = `
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>About</h3>
+            <p>Dexbreezy builds thoughtful websites and digital experiences with a clean, modern feel.</p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://dexbreezy.com">Website</a></li>
+              <li><a href="mailto:hello@dexbreezy.com">Email</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Dexbreezy. All rights reserved.</p>
+          <p><a href="https://dexbreezy.com">dexbreezy.com</a></p>
+        </div>
+      `;
+
+      const yearElement = document.getElementById("current-year");
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+</body>
+
+</html>
