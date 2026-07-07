@@ -12,7 +12,10 @@
   <title>Dexbreezy | dexbreezy.com</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<nav>
+		<a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a>
+	</nav>
 <body>
   <main>
     <section class="hero-card">
@@ -28,42 +31,7 @@
 
   <footer id="site-footer"></footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const footerElement = document.getElementById("site-footer");
-
-      if (!footerElement) {
-        return;
-      }
-
-      footerElement.innerHTML = `
-        <div class="footer-container">
-          <div class="footer-col">
-            <h3>About</h3>
-            <p>Dexbreezy builds thoughtful websites and digital experiences with a clean, modern feel.</p>
-          </div>
-
-          <div class="footer-col">
-            <h3>Connect</h3>
-            <ul>
-              <li><a href="https://dexbreezy.com">Website</a></li>
-              <li><a href="mailto:hello@dexbreezy.com">Email</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>&copy; <span id="current-year"></span> Dexbreezy. All rights reserved.</p>
-          <p><a href="https://dexbreezy.com">dexbreezy.com</a></p>
-        </div>
-      `;
-
-      const yearElement = document.getElementById("current-year");
-      if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-      }
-    });
-  </script>
-</body>
+  
+  </body>
 
 </html>
